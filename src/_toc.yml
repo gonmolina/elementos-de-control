@@ -1,0 +1,44 @@
+format: jb-book
+root: contents/ceaten_sources/intro
+parts:
+- caption: "Instalación de Python"
+  chapters:
+  - file: contents/guia_instalacion/guia_de_instalacion
+  - file: "contents/intro_python/Introducci\xF3n a los notebooks de Jupyter"
+
+- caption: "Se\xF1ales, sistemas y modelos"
+  chapters:
+  - file: contents/modulo1/intro_sys_sen/intro_sis_y_sen
+  - file: contents/modulo1/laplace/transformada_laplace_python_opcional
+  - file: contents/modulo1/laplace/funcion_transferencia
+  # - file: contents/modulo1/diagrama_bloques/diagrama_de_bloques
+# - caption: "An\xE1lisis de la respuesta temporal"
+#   chapters:
+#   - file: contents/modulo2/estabilidad/estabilidad
+#   - file: contents/modulo2/respuesta temporal/Respuesta Temporal
+#   - file: contents/modulo2/polos y ceros adicionales/Efecto Polos y Ceros Adicionales
+# - caption: "An\xE1lisis de estado estacionario"
+#   chapters:
+#   - file: contents/modulo3/realimentacion/carateristicas de la realimentacion
+#   - file: contents/modulo3/errores/Errores
+# - caption: "Lugar de las ra\xEDces"
+#   chapters:
+#   - file: contents/modulo4/lugar de las raices
+#   - file: contents/modulo4/Pasos para el trazado
+#   - file: contents/modulo4/Lugar de la raices con Python
+
+
+
+
+- caption: "Anexo 1: Introducción a Python"
+  chapters:
+  - file: contents/intro_python/Extra_Python
+  - file: contents/intro_python/Intro-Matplotlib
+
+
+# - caption: "Dise\xF1o de compensadores"
+  # chapters:
+  # - file: contents/modulo5/compensadores
+  # - file: contents/modulo5/problema_levitador
+  # - file: contents/modulo5/tipo1_lead
+  # - file: contents/modulo5/lead_lag_design
