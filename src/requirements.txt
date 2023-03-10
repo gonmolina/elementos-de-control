@@ -12,7 +12,6 @@ markdown-it-py
 matplotlib
 mdit-py-plugins
 myst-nb
-myst-parser
 numpy
 pandas
 pydata-sphinx-theme
