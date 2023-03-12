@@ -11,6 +11,11 @@ parts:
   - file: contents/modulo1/intro_sys_sen/intro_sis_y_sen
   - file: contents/modulo1/laplace/transformada_laplace_python_opcional
   - file: contents/modulo1/laplace/funcion_transferencia
+  - file: contents/modulo1/ejemplos_sistemas/ejemplos_sistemas
+    sections:
+    - file: contents/modulo1/ejemplos_sistemas/resorte_no_lineal
+    - file: contents/modulo1/ejemplos_sistemas/CineticaPuntual
+    - file: contents/modulo1/ejemplos_sistemas/Ejemplo_Presa_Depredador
   # - file: contents/modulo1/diagrama_bloques/diagrama_de_bloques
 # - caption: "An\xE1lisis de la respuesta temporal"
 #   chapters:
