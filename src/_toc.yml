@@ -17,11 +17,10 @@ parts:
     - file: contents/modulo1/ejemplos_sistemas/CineticaPuntual
     - file: contents/modulo1/ejemplos_sistemas/Ejemplo_Presa_Depredador
   # - file: contents/modulo1/diagrama_bloques/diagrama_de_bloques
-# - caption: "An\xE1lisis de la respuesta temporal"
-#   chapters:
-#   - file: contents/modulo2/estabilidad/estabilidad
-#   - file: contents/modulo2/respuesta temporal/Respuesta Temporal
-#   - file: contents/modulo2/polos y ceros adicionales/Efecto Polos y Ceros Adicionales
+- caption: "An\xE1lisis de la respuesta temporal"
+  chapters:
+  - file: contents/modulo2/estabilidad/estabilidad
+  - file: contents/modulo2/respuesta temporal/Respuesta Temporal
 # - caption: "An\xE1lisis de estado estacionario"
 #   chapters:
 #   - file: contents/modulo3/realimentacion/carateristicas de la realimentacion
