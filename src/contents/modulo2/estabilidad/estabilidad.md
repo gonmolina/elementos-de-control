@@ -93,12 +93,13 @@ En este caso vemos que la condición que la salida sea permanezca acotada debe s
 
 Una condición necesaria y suficiente para la BIBO estabilidad es que los polos estén ubicados en el semiplano izquierdo abierto (polos con parte real negativa)
 
-:::{figure-md}
-<img style="display:block; margin-left: auto; margin-right: auto;" src="bibo_plano_s.png" width="450" alt="condición de estabilidad">
+```{figure} bibo_plano_s.png
+:width: 450px
+:alt: Condición de estabilidad
+:align: center
 
 Zona de estabilidad de en el plano $s$
-
-:::
+```
 
 +++
 
@@ -120,9 +121,9 @@ Si $u(t)$ es acotada, entonces existe $M$ tal que $|u|\le M < \infty$ y entonces
 
 $$|y(t)|=\left|\int_{-\infty}^{\infty} h(\tau) u(t-\tau) d\tau\right| \leq \int_{-\infty}^{\infty} |h(\tau)||u(t-\tau)|d\tau \leq M \int_{-\infty}^{\infty}|h(\tau)|d\tau$$  
 
-Por lo tanto, la salida $y(t)$ estará acotada si la integral 
+Por lo tanto, la salida $y(t)$ estará acotada si la integral
 
-$$\int_{-\infty}^{\infty}|h(\tau)|d\tau$$ 
+$$\int_{-\infty}^{\infty}|h(\tau)|d\tau$$
 
 es acotada.
 
@@ -130,9 +131,9 @@ es acotada.
 
 Por otro lado, supongamos que esta integral es no acotada, y consideramos la entrada acotada $u(t-\tau)$ = +1, si $h(t) > 0$, y $u(t-\tau) = -1$, si $h(t) < 0$. En este caso:
 
-$$y(t)=\int_{-\infty}^{\infty}|h(\tau)|d\tau$$
+$$y(t)=\int_{-\infty}^{\infty}|h(\tau)|d\tau.$$
 
-y por lo tanto la salida es no acotada. O sea que si la integral es no acotada, el sistema no es estable.
+Vemos que esta integral es no acotada. De esta forma podemos concluir que es el un sistema BIBO estable si y solo si la integral anterior es acotada.
 
 +++
 
@@ -154,11 +155,13 @@ Un sistema LTI es BIBO estable si y solo si su función transferencia tiene todo
 
 ### Ejemplo de aplicación de las condiciones de BIBO estabilidad
 
-:::{figure-md}
-<img style="display:block; margin-left: auto; margin-right: auto;" src="circRC.png" width="200" alt="Circuito RC Serie">
+```{figure} circRC.png
+:width: 200px
+:alt: Circuito RC Serie
+:align: center
 
 Circuito R-C
-:::
+```
 
 Analicemos la estabilidad del circuito eléctrico que muestra la figura anterior.
 

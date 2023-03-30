@@ -33,6 +33,7 @@ donde $a(s)$ y $b(s)$ son polinomios en $s$ y no tienen factores en común. Para
 
 Denominamos **polos** de $G(s)$, a aquellos lugares del plano complejo $s$, en donde la función de transferencia $G(s)$ se hace infinita, o sea donde $a(s) = 0$ (las raíces del polinomio denominador $a(s)$).
 ```
+
 ```{admonition} Ceros
 :class: Important
 
@@ -42,7 +43,7 @@ Denominan **ceros** de $G(s)$, a aquellos lugares del plano complejo $s$, en don
 Ya que la **respuesta de un sistema a un impulso está dada por su función de transferencia**, a dicha respuesta se la denomina **respuesta natural del sistema**. Podemos usar los polos y ceros para determinar la respuesta temporal y así identificar la forma de la respuestas temporales con las ubicaciones correspondientes de los polos y ceros de la función de transferencia.
 
 ```{note}
-Los **polos y ceros describen completamente a $G(s)$ **, excepto por un multiplicador constante (ganancia en estado estacionario). Esto significa que las funciones $G(s)$ las podemos representar directamente en el plano $s$.
+Los **polos y ceros describen completamente a $G(s)$**, excepto por un multiplicador constante (ganancia en estado estacionario). Esto significa que las funciones $G(s)$ las podemos representar directamente en el plano $s$.
 ```
 
 +++
@@ -397,14 +398,6 @@ $$g(t)=\left(2\cos(2t)-\frac{1}{2}\sin(2t)\right)=\sqrt{\left(\frac{1}{2}\right)
 
 En la figura siguiente se esquematiza las respuestas naturales (al impulso) de los sistemas dependiendo de la ubicación de los polos.
 
-+++ {"tags": ["remove-cell"]}
-
-:::{figure-md}
-<img style="display:block; margin-left: auto; margin-right: auto;" src="fig1.gif" width="600" alt="fig1.gif">
-
-Respuestas temporales asociadas con los respectivos polos en el plano $s$
-:::
-
 ```{code-cell} ipython3
 :tags: [hide-input]
 
@@ -621,11 +614,14 @@ $$\omega_d = \omega_n \sqrt{1-\zeta^2}$$
 A $\zeta$ la conocemos como **coeficiente de amortiguamiento**, y a $\omega_n$ como **frecuencia natural no-amortiguada**. A $\omega_d$ se la conoce como **frecuencia amortiguada** del sistema y se corresponde con la parte imaginaria del sistema. Además, $\sigma$ es la parte real de los polos complejos.
 
 En la figura siguiente observamos el significado gráfico de cada uno de estos parámetros.
-:::{figure-md}
-<img style="display:block; margin-left: auto; margin-right: auto;" src="fig2.gif" width="250" alt="fig2.gif">
+
+```{figure} fig2.gif
+:width: 250px
+:alt: Significado de los parámetros parámetros respecto la ubicación de los polos en el plano $s$
+:align: center
 
 Significado de los parámetros parámetros respecto la ubicación de los polos en el plano $s$
-:::
+```
 
 +++
 
@@ -667,12 +663,13 @@ ax.set_title(r' Respuesta de un sistema de segundo orden para distintos valores 
 
 Las especificaciones para el diseño de un sistema de control frecuentemente involucran ciertos requerimientos asociados a la respuesta temporal del sistema. Los requerimientos para una respuesta a un escalón los expresamos en términos de valores estándar ilustrados en la figura siguiente:
 
-:::{figure-md}
-<img style="display:block; margin-left: auto; margin-right: auto;" src="fig4.png" width="450" alt="fig4.png">
+```{figure} fig4.png
+:width: 450px
+:alt: Definiciones de tiempo de crecimiento, tiempo de establecimiento, tiempo del pico y sobrepico de una respuesta a un escalón
+:align: center
 
 Definiciones de tiempo de crecimiento, tiempo de establecimiento, tiempo del pico y sobrepico de una respuesta a un escalón.
-
-:::
+```
 
 +++
 
@@ -728,11 +725,13 @@ $$t_s = \frac{4}{\sigma} =\frac{4}{\zeta\omega_n} \qquad \text{(considerando la 
 
 Este tipo de especificaciones nos darán inecuaciones que limitarán los parámetros $\omega_n$, $\zeta$, y $\sigma$; que a su vez limitarán la ubicación de los polos en el plano s, como mostramos en la figura siguiente.
 
-:::{figure-md}
-<img style="display:block; margin-left: auto; margin-right: auto;" src="fig5.png" width="650" alt="fig5.png">
+```{figure} fig5.png
+:width: 650px
+:alt: Limitación de ubicación de los polos en el plano $s$ respecto a las especificaciones.
+:align: center
 
 Limitación de ubicación de los polos en el plano $s$ respecto a las especificaciones.
-:::
+```
 
 +++
 

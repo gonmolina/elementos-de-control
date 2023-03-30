@@ -24,7 +24,7 @@ Sea un sistema con condiciones iniciales nulas, entonces el sistema se puede exp
 
 $$\frac{Y(s)}{U(s)}=H(s)$$
 
-donde $Y(s)$ es la transformada de Laplace de la salida $y(t)$ para una entrada arbitraria $u(t)$, cuya transformada de Laplace es $U(s)$. 
+donde $Y(s)$ es la transformada de Laplace de la salida $y(t)$ para una entrada arbitraria $u(t)$, cuya transformada de Laplace es $U(s)$.
 
 Notar que con esta definición, lo que se transforma al dominio de Laplace son las **señales** de entrada y salida. No es un sistema.
 
@@ -37,7 +37,7 @@ Notar que con esta definición, lo que se transforma al dominio de Laplace son l
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
-### Obtención de la función transferencia de un sistema:
+### Obtención de la función transferencia de un sistema
 
 La función transferencia de un sistema se puede obtener de varias formas:
 
@@ -47,7 +47,8 @@ La función transferencia de un sistema se puede obtener de varias formas:
 
 +++ {"slideshow": {"slide_type": "slide"}}
 
-### Ejemplo general:
+### Ejemplo general
+
 En general un sistema dinámico se representa como una ecuación diferencial de orden $n$, Es decir:
 
 $$ \begin{aligned}
@@ -61,16 +62,15 @@ Donde $y(t)$ es la salida del sistema y $u(t)$ es la entrada del sistema, hacien
 $$
 \begin{aligned}
  & a_ns^nY(s)+a_{n-1}s^{n-1}Y(s)+\cdots+a_1sY(s)+a_0Y(s)+ \mbox{term. cond. iniciales de y(t)} = \cdots \\
- \dots & b_ps^pU(s)+b_{p-1}s^{p-1}U(s)+\cdots+b_1sU(s)+b_0U(s)+ \mbox{term. cond. iniciales de u(t)} 
+ \dots & b_ps^pU(s)+b_{p-1}s^{p-1}U(s)+\cdots+b_1sU(s)+b_0U(s)+ \mbox{term. cond. iniciales de u(t)}
  \end{aligned}
 $$
- 
 
 si asumimos que las condiciones iniciales para $y(t)$ y $u(t)$ son nulas, se reduce a:
 
 $$
 \begin{aligned}
- & a_ns^nY(s)+a_{n-1}s^{n-1}Y(s)+\cdots+a_1sY(s)+a_0Y(s) = \cdots \\ 
+ & a_ns^nY(s)+a_{n-1}s^{n-1}Y(s)+\cdots+a_1sY(s)+a_0Y(s) = \cdots \\
 \cdots & b_ps^nU(s)+b_{p-1}s^{p-1}U(s)+\cdots+b_1sU(s)+b_0U(s)
 \end{aligned}
 $$
@@ -95,7 +95,7 @@ Es importante notar, que en el dominio transformado de Laplace estas ecuaciones 
 
 Supongamos CI nulas, es decir $i_a(t=0)=0$ y $(\theta_m(t=0)=0)$ entonces de las ecuaciones del motor obtenidas en ejemplos anteriores y aplicando la transformada de Laplace, tenemos:
 
-$$ 
+$$
 \left\{\begin{array}{c}
 s~I_a(s) = \frac{1}{L_a} E_a(s) -\frac{ R_a}{L_a} I_a(s) -  \frac{K_b}{L_a} s~\Theta_m(s)  \\
 s^2~\Theta_m(s) =   \frac{K_t}{J_m} I_a(s) - \frac{D_m}{J_m}s~\Theta_m(s) - \frac{1}{J_m} T_r(s)
@@ -106,7 +106,7 @@ $$
 
 agrupando las variables y despejando de la segunda ecuación la corriente $I_a(s)$:
 
-$$ 
+$$
 \begin{aligned}
 \left(s+ \frac{ R_a}{L_a}\right)I_a(s) &= \frac{1}{L_a} E_a(s) - \frac{K_b}{L_a} s~\Theta_m(s)  \\
  I_a(s) &= \frac{J_m}{K_t}\left(s^2+ \frac{D_m}{J_m}s\right)~\Theta_m(s) + \frac{1}{K_t} T_r(s)
@@ -117,13 +117,13 @@ $$
 
 Este sistema tiene 2 entradas, la entrada que podemos controlar $E_a(s)$ y la entrada de perturbación $T_r(s)$, por ser un sistema LTI podemos hallar las FTs de la siguiente forma:
 
-$$ 
-\left(s+ \frac{ R_a}{L_a}\right)\frac{J_m}{K_t}\left(s^2+ \frac{D_m}{J_m}s\right)\Theta_m(s) + \left(s+ \frac{ R_a}{L_a}\right)\frac{1}{K_t} T_r(s) = \frac{1}{L_a} E_a(s) - \frac{K_b}{L_a} s\Theta_m(s) 
+$$
+\left(s+ \frac{ R_a}{L_a}\right)\frac{J_m}{K_t}\left(s^2+ \frac{D_m}{J_m}s\right)\Theta_m(s) + \left(s+ \frac{ R_a}{L_a}\right)\frac{1}{K_t} T_r(s) = \frac{1}{L_a} E_a(s) - \frac{K_b}{L_a} s\Theta_m(s)
 $$
 
 luego,
 
-$$ 
+$$
 \left(\left(s+ \frac{ R_a}{L_a}\right)~\frac{J_m}{K_t}\left(s^2+ \frac{D_m}{J_m}s\right)+\frac{K_b}{L_a} s\right)\Theta_m(s)  = \frac{1}{L_a} E_a(s) - \left(s+ \frac{ R_a}{L_a}\right)\frac{1}{K_t} T_r(s)
 $$
 
@@ -131,7 +131,7 @@ $$
 
 luego considerando $T_r=0$, hallamos la FT desde la entrada $E_a$ a la salida $\Theta_m$:
 
-$$ 
+$$
 \frac{\Theta_m(s)} {E_a(s)}  = \frac{\frac{1}{L_a}}{\left(s+ \frac{ R_a}{L_a}\right)\frac{J_m}{K_t}\left(s^2+ \frac{D_m}{J_m}s\right)+\frac{K_b}{L_a} s}  
 $$
 
@@ -146,6 +146,7 @@ $$
 ## Ejemplo #2: masa resorte
 
 ### Resolución de las ecuaciones
+
 #### Ejemplo sistema mecánico
 
 ```{figure} ejemplo_sis_mec.png
@@ -167,7 +168,7 @@ y(t)&=x(t)
 \end{align*}
 $$
 
-+++ 
++++
 
 Podemos obtener la función transferencia de este sistema mediante reemplazando $x$ por $y$ y $F$ por $u$ y transformando por Laplace, usando la propiedad de la derivada de la transformada de Laplace. Esto es:
 

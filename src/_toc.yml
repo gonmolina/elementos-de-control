@@ -21,15 +21,16 @@ parts:
   chapters:
   - file: contents/modulo2/estabilidad/estabilidad
   - file: contents/modulo2/respuesta temporal/Respuesta Temporal
-# - caption: "An\xE1lisis de estado estacionario"
-#   chapters:
-#   - file: contents/modulo3/realimentacion/carateristicas de la realimentacion
-#   - file: contents/modulo3/errores/Errores
-# - caption: "Lugar de las ra\xEDces"
-#   chapters:
-#   - file: contents/modulo4/lugar de las raices
-#   - file: contents/modulo4/Pasos para el trazado
-#   - file: contents/modulo4/Lugar de la raices con Python
+- caption: "An\xE1lisis de estado estacionario"
+  chapters:
+  - file: contents/modulo3/realimentacion/carateristicas de la realimentacion
+  - file: contents/modulo3/errores/Errores
+  
+- caption: "Lugar de las ra\xEDces"
+  chapters:
+  - file: contents/modulo4/lugar de las raices
+  - file: contents/modulo4/Pasos para el trazado
+  - file: contents/modulo4/Lugar de la raices con Python
 
 
 
