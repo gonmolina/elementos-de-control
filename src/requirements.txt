@@ -15,6 +15,7 @@ myst-nb
 numpy
 pandas
 sphinx
+pydata-sphinx-theme==0.13.1
 sphinx-book-theme
 scipy
 sympy
