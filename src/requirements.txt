@@ -14,7 +14,7 @@ mdit-py-plugins
 myst-nb
 numpy
 pandas
-sphinx==5.0
+sphinx
 sphinx-book-theme
 scipy
 sympy
