@@ -202,16 +202,20 @@ Y los ángulos $\gamma$ de salida son:
 
 $$3\gamma-180^o=180^o+n360^o \Rightarrow \gamma=-120^o,0^o,120^o$$
 
-:::{figure-md} pasos-lr
-<img src="pasos_trazado_fig1.png" width=800px>
+```{figure} pasos_trazado_fig1.png
+:width: 800px
+:alt: Pasos del lugar de las raíces
+
 
 Pasos del lugar de las raíces
-:::
+```
 
-:::{figure-md} resultados-lr
-<img src="pasos_trazado_fig2.png" width=500px>
+```{figure} pasos_trazado_fig2.png
+:width: 800px
+:alt: Resultado final
+
 
 Resultado final
-:::
+```
 
 En Python, lugar de las raíces se puede resolver fácilmente usando el módulo de control.

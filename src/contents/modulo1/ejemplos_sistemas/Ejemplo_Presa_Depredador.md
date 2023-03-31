@@ -22,7 +22,7 @@ $$
 \begin{aligned}
 \frac{dx(t)}{dt} &=
 \alpha  x(t)-\beta x(t)y(t)\\
-\frac{dy(t)}{dt} &= \left(\gamma -y(t) +\delta x(t)y(t)\right)
+\frac{dy(t)}{dt} &= -\gamma y(t) +\delta x(t)y(t)
 \end{aligned}
 $$
 

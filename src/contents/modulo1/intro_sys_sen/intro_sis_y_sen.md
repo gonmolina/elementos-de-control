@@ -84,7 +84,6 @@ Señal de un electrocardiograma
 
 #### Imagen digital (dos variables independientes: coordenadas espaciales del pixel)
 
-
 ```{figure} signal_image.png
 :name: imagen
 :alt: imagen
@@ -151,6 +150,7 @@ Es decir, la derivada de la función escalón es la función impulso unitario.
 ## Sistemas
 
 ### Esquema básico de un sistema
+
 ```{figure} sis_general2.png
 :align: center
 :width: 400px
@@ -159,6 +159,7 @@ Es decir, la derivada de la función escalón es la función impulso unitario.
 
 Esquema de sistema
 ```
+
 Los sistemas no necesariamente están restringidos a sistemas físicos. Pueden ser biológicos, económicos, computacionales, informáticos, sociales, etc.
 
 +++
@@ -237,7 +238,6 @@ entonces si se aplica una $c_1u_1 +c_2u_2$  entrada en el instante $t_0$, con el
 Hipótesis linealidad
 ```
 
-
 +++
 
 ```{figure} superposicion2.png
@@ -261,11 +261,8 @@ Requerimiento linealidad
 
 Un sistema es invariante en el tiempo si su salida es siempre la misma cada vez que se aplique la misma entrada (para las mismas condiciones iniciales), sin importar el instante en que se aplique la entrada. Para dar una definición más precisa, es necesario definir el operador desplazamiento temporal que notaremos: $z_{\Delta}$  que aplicado a una función del tiempo, la desplaza temporalmente un intervalo $\Delta$, es decir:
 
-
-
 #### Desplazamiento temporal
 
- 
 ```{figure} estacionariedad.png
 :alt: Desplazamiento temporal
 :width: 400px
@@ -278,10 +275,7 @@ Operador Desplazamiento temporal
 
 Por lo tanto, el sistema es estacionario estacionario si para una entrada $u(t)$ aplicada en el instante $t_0$ resulta la salida es $y(t),$ entonces para una entrada = $z^\Delta u(t)$ aplicada en $t_0+\Delta$ la salida es $\tilde y(t) =z^\Delta y(t)$
 
-
-
 #### Principio de estacionariedad o invariancia en el tiempo
-
 
 ```{figure} estacionariedad2.png
 :alt: Principio de invariancia
