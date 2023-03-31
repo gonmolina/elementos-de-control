@@ -91,7 +91,8 @@ resorte_nl = ctrl.NonlinearIOSystem(resorte_derivs, resorte_salidas, name='resor
 +++ {"user_expressions": []}
 
 Para poder simular el sistema nos queda definir:
-- en que tiempos queremos tener la respuesta del sistema 
+
+- en que tiempos queremos tener la respuesta del sistema
 - cuanto vale la entrada para los tiempos definidos anteriormente
 
 Para esto vamos a suponer que queremos las salidas cada 0.01 segundos, entre 0 y 10 segundos.

@@ -127,12 +127,12 @@ En la figura mostramos dos diagramas genéricos de bloques equivalentes, con la 
 
 Dicho error tendrá un transitorio, y luego llegará a un estacionario al cual se lo denomina error de estado estacionario.
 
-:::{figure-md}
-
-<img src="fig4.gif" width=400px>
+```{figure} fig4.gif
+:alt: Diagrama genérico para errores en estado estacionario
+:width: 400px
 
 Diagrama genérico para errores en estado estacionario
-:::
+```
 
 +++
 
@@ -140,12 +140,12 @@ Diagrama genérico para errores en estado estacionario
 
 Si $H = I$, podemos modelar el sistema con realimentación unitaria como muestra la siguiente figura.
 
-:::{figure-md}
+```{figure} fig5.gif
+:alt: Diagrama particular con $H(s)$=1 y $G(s) = I(s)D(s)G_p
+:width: 300px
 
-<img src="fig5.gif" width=300px>
-
-Diagrama particular con $H(s)$=1 y $G(s) = I(s)D(s)G_p(s)$.
-:::
+Diagrama particular con $H(s)$=1 y $G(s) = I(s)D(s)G_p(s)$
+```
 
 Entonces tendremos:
 

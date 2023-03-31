@@ -23,10 +23,10 @@ kernelspec:
 Las ecuaciones de cinética puntual del núcleo de un reactor a un grupo de energía y a un grupo de precursores sin fuente de neutrones son:
 
 $$
-\begin{eqnarray}
-\frac{dn(t)}{dt}&=&\frac{\rho(t)-\beta}{\Lambda}n(t)+\lambda c(t)\\
-\frac{dc(t)}{dt}&=&\frac{\beta}{\Lambda}n(t)-\lambda c(t)
-\end{eqnarray}
+\begin{align}
+\frac{dn(t)}{dt}&=\frac{\rho(t)-\beta}{\Lambda}n(t)&+\lambda c(t)\\
+\frac{dc(t)}{dt}&=\frac{\beta}{\Lambda}n(t)&-\lambda c(t)
+\end{align}
 $$
 
 con $n$ el flujo neutrónico normalizado (en realidad es población de neutrones, pero bajo ciertas condiciones se puede considerar proporcional al flujo neutrónico o potencia nuclear), $c$ la concentración de precursores, y $\rho$ la reactividad introducida en el mismo por las barras de control. Los parámetros del sistema son: $\Lambda = 1,76e^{-4} s$ (tiempo de reproducción de los neutrones rápidos), $\lambda = 0,076 1/s$ (constante de decaimiento de los precursores) y $\beta = 765$pcm (fracción de neutrones retardados que son emitidos por los precursores).
